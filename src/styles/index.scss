@@ -28,6 +28,7 @@ p {
   font-size: 18px;
   margin-top: 0;
   justify-content: center;
+  text-decoration: underline;
 }
 .navigation {
   margin-top: 20px;
@@ -35,13 +36,16 @@ p {
   margin-right: 50px;
   display: flex;
   align-items: center;
+  
 
   justify-content: space-between;
   & ul {
     display: flex;
+    
     gap: 30px;
     list-style: none;
     & li {
+      
       font-size: 24px;
       color: #ff6060;
     }
