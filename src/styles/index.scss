@@ -1,0 +1,82 @@
+p {
+  font-family: "Montserrat", sans-serif;
+}
+.highNumber{
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ff6060;
+  font-size: 288px;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: center;
+}
+.middleText{
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #ff6060;
+  font-size: 36px;
+  margin-top: 0;
+  justify-content: center;
+}
+.littleText{
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #ff6060;
+  font-size: 18px;
+  margin-top: 0;
+  justify-content: center;
+}
+.navigation {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  & ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    & li {
+      font-size: 24px;
+      color: #ff6060;
+    }
+  }
+}
+.photoaccueil {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 223px;
+  position: relative; 
+
+  & img {
+    border-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  & p {
+    position: absolute;
+    font-size: 48px;
+    color: white;
+    top: 14%;
+    left: 23%;
+  }
+}
+.photoabout {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  & img {
+    object-fit: cover;
+    border-radius: 25px;
+    width: 100%;
+    height: 223px;
+  }
+}
