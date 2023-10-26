@@ -1,13 +1,14 @@
 import React from "react";
-import Navigation from "../components/Navigation";
 import Photoabout from "../components/Photoabout";
+import Banner from "../components/Banner";
 
 const About = () => {
-   return <div>
-      <Navigation />
+  return (
+    <div>
+      <Banner />
       <Photoabout />
-      
-         </div>;
+    </div>
+  );
 };
 
 export default About;

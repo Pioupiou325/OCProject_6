@@ -1,11 +1,13 @@
 import React from "react";
-import Navigation from "../components/Navigation";
+import Banner from "../components/Banner";
 import Photoaccueil from "../components/Photoaccueil";
+import Card from "../components/Card";
 
 const Home = () => {
    return <div>
-      <Navigation />
+      <Banner />
       <Photoaccueil />
+      <Card />
       
       </div>;
 };

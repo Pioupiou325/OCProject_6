@@ -1,9 +1,9 @@
 import React from "react";
-import Navigation from "../components/Navigation";
+import Banner from "../components/Banner";
 
 const Notfound = () => {
   return <div>
-    <Navigation />
+    <Banner />
     <p className='highNumber'>404</p>
     <p className="middleText">Oups! La page que vous demandez n' existe pas</p>
     <p className="littleText">Retourner sur la page d' accueil</p>

@@ -1,11 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
 const Navigation = () => {
   return (
-     <div className="navigation">
-        <h1><img src="/assets/logoKasa.svg" alt="logo Kasa" width="210px" heigth="68px" /></h1>
+     <div >
+        
       <ul>
         <NavLink to="/">
           <li>Accueil</li>
