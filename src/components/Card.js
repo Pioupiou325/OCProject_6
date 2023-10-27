@@ -1,7 +1,5 @@
 import React from "react";
 import logements from "../datas/logements.json";
-import Formlogement from "../pages/Formlogement";
-
 import { NavLink } from "react-router-dom";
 function Card() {
   const list_logements = logements.map((logement) => logement);
