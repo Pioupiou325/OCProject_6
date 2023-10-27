@@ -1,27 +1,28 @@
-import React from 'react';
-import logements from "../datas/logements.json"
-const Card = () => {
-   const list_logements = logements.map(logement =>logement);
+import React from "react";
+import logements from "../datas/logements.json";
+import Formlogement from "../pages/Formlogement";
 
-   return (
-      <div className='card'>
-        <ul>
-          {list_logements.map(logement => (
-            <li  key={logement.id}>
-                <div className='logement'>
-                <img src={logement.cover} alt={'cover &{logement.id}'} />
-                
+import { NavLink } from "react-router-dom";
+function Card() {
+  const list_logements = logements.map((logement) => logement);
+
+  return (
+    <div className="card">
+      <ul>
+        {list_logements.map((logement) => (
+          <NavLink to={`/formlogement/${logement.id}`}>
+            <li key={logement.id}>
+              <div className="logement">
+                <img src={logement.cover} alt={logement.id} />
+
                 <p>{logement.title}</p>
-                </div>
-                
-             </li>
-             
-          ))}
-            
-        </ul>
-        
-      </div>
-   );
-};
+              </div>
+            </li>
+          </NavLink>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export default Card;

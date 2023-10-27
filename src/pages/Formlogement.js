@@ -1,7 +1,10 @@
 import React from "react";
 
-const Formlogement = () => {
-  return <div>fiche logement</div>;
+import { useParams } from 'react-router-dom';
+
+function Formlogement() {
+  const { id } = useParams();
+  return <div>{id}</div>;
 };
 
 export default Formlogement;
