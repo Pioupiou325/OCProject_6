@@ -11,7 +11,7 @@ function Card() {
           <NavLink to={`/formlogement/${logement.id}`}>
             <li key={logement.id}>
               <div className="logement">
-                <img src={logement.cover} alt={logement.id} />
+                <img src={logement.cover} alt={`cover ${logement.title}`} />
 
                 <p>{logement.title}</p>
               </div>
