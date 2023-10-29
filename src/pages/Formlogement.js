@@ -2,6 +2,7 @@ import React from "react";
 import logements from "../datas/logements.json";
 import { useParams } from "react-router-dom";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 
 function Formlogement() {
   const { id } = useParams();
@@ -19,6 +20,7 @@ function Formlogement() {
       {pictures_array}
       
       <img src={logement.host.picture} alt="propriétaire"></img>
+      <Footer />
     </div>
   );
 }
