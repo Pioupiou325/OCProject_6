@@ -5,17 +5,16 @@ import Card from "../components/Card";
 import Footer from "../components/Footer";
 
 const Home = () => {
-   return <div>
+  return (
+    <div>
       <Banner />
       <PhotoBanner src="/assets/montagnes_accueil.jpg" alt="montagnes">
-         <p>
-         Chez vous comme ailleurs
-      </p>
-      </PhotoBanner> 
-            <Card />
+        <p>Chez vous comme ailleurs</p>
+      </PhotoBanner>      
+      <Card />
       <Footer />
-      
-      </div>;
+    </div>
+  );
 };
 
 export default Home;
