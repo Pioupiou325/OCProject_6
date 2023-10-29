@@ -1,15 +1,10 @@
 @import "./navigation.scss";
-@import "./photoaccueil.scss";
-@import './photoabout.scss';
-@import './notfound.scss';
-@import './card.scss';
-@import'./footer.scss';
-*{
-   max-width: 1440px;
-   margin-right: auto;
-   margin-left: auto;
-   
+@import "./photoBanner.scss";
+@import "./notfound.scss";
+@import "./card.scss";
+@import "./footer.scss";
+* {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-
-

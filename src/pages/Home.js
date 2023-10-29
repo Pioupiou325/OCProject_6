@@ -12,7 +12,7 @@ const Home = () => {
          Chez vous comme ailleurs
       </p>
       </PhotoBanner> 
-      <Card />
+            <Card />
       <Footer />
       
       </div>;
