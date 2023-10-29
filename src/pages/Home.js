@@ -1,13 +1,17 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Photoaccueil from "../components/Photoaccueil";
+import PhotoBanner from "../components/PhotoBanner";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 
 const Home = () => {
    return <div>
       <Banner />
-      <Photoaccueil />
+      <PhotoBanner src="/assets/montagnes_accueil.jpg" alt="montagnes">
+         <p>
+         Chez vous comme ailleurs
+      </p>
+      </PhotoBanner> 
       <Card />
       <Footer />
       
