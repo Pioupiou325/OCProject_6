@@ -2,7 +2,7 @@ import React from "react";
 import logements from "../datas/logements.json";
 import { NavLink } from "react-router-dom";
 function Card() {
-  const list_logements = logements.map((logement) => logement);
+  const  list_logements = logements.map((logement) =>  logement);
 
   return (
     <div className="card">

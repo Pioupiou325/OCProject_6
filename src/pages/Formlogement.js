@@ -3,23 +3,19 @@ import logements from "../datas/logements.json";
 import { useParams } from "react-router-dom";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import Carrousel from "../components/Carrousel";
 
 function Formlogement() {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id);
-  const picture = logement.pictures;
-  const pictures_array = [];
-  picture.forEach(element => {
-    ;
-    pictures_array.push(<img key={element.position} src={element} alt="collection"></img>);
-    
-      });
+  
+  
   return (
-    <div>
+    <div className="formlogement">
       <Banner />
-      {pictures_array}
+      <Carrousel pics={logement} />
       
-      <img src={logement.host.picture} alt="propriétaire"></img>
+      {/* <img src={logement.host.picture} alt="propriétaire"></img> */}
       <Footer />
     </div>
   );
