@@ -4,6 +4,8 @@
   height: 209px;
   background-color: black;
   text-align: center;
+  position: fixed;
+  bottom: 0;
   & .logtext {
    padding-top: 45px; /* poussé de la moitié de hauteur de viewport */
   

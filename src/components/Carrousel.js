@@ -24,17 +24,27 @@ const Carrousel = ({ pics }) => {
       updateIndex(index - 1);
     }
   }
-  return (
-    <div className="carrousel">
+  if (pictures.length > 1) {
+    return (
+      <div className="carrousel">
       
-      <button className="leftPosition" onClick={clicOnPrevious}>previous</button>
-      <button className="rightPosition" onClick={clicOnNext}>next</button>
-      <img src={pictures[index]} alt={pics.title}></img>;
-      <p>
-        {index + 1} / {pictures.length}
-      </p>
-    </div>
-  );
-};
+        <button className="leftPosition" onClick={clicOnPrevious}>previous</button>
+        <button className="rightPosition" onClick={clicOnNext}>next</button>
+        <img src={pictures[index]} alt={pics.title}></img>;
+        <p>
+          {index + 1} / {pictures.length}
+        </p>
+      </div>
+    )
+  } else {
+    return (
+      <div className="carrousel">
+        <img src={pictures[index]} alt={pics.title}></img>
+        </div>
+    )
+    
+  };
+}
+
 
 export default Carrousel;

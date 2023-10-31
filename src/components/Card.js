@@ -8,8 +8,8 @@ function Card() {
     <div className="card">
       <ul>
         {list_logements.map((logement) => (
-          <NavLink to={`/formlogement/${logement.id}`}>
-            <li key={logement.id}>
+          <NavLink key={logement.id} to={`/formlogement/${logement.id}`}>
+            <li >
               <div className="logement">
                 <img src={logement.cover} alt={`cover ${logement.title}`} />
 
