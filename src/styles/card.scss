@@ -1,13 +1,13 @@
 .card {
-  margin-right: 50px;
-  margin-left: 50px;
+  // margin-right: 50px;
+  // margin-left: 50px;
 
   & ul {
     display: flex;
     flex-wrap: wrap;
      justify-content: space-between;
     list-style: none;
-    
+    padding-left: 0;
     background-color: #f6f6f6;
     margin-right: 50px;
     margin-left: 50px;

@@ -2,13 +2,10 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 
 const Carrousel = ({ pics }) => {
-
   const pictures = pics.pictures;
   const [index, updateIndex] = useState(0);
   useEffect(() => {
     <p>{index}</p>;
-     
-     
   });
   function clicOnNext() {
     if (index < pictures.length - 1) {
@@ -27,24 +24,22 @@ const Carrousel = ({ pics }) => {
   if (pictures.length > 1) {
     return (
       <div className="carrousel">
-      
-        <button className="leftPosition" onClick={clicOnPrevious}>previous</button>
-        <button className="rightPosition" onClick={clicOnNext}>next</button>
-        <img src={pictures[index]} alt={pics.title}></img>;
+        
+        <img className="leftPosition" onClick={clicOnPrevious} src="/assets/back.svg" alt=""></img>
+        <img className="rightPosition" onClick={clicOnNext} src="/assets/forward.svg" alt=""></img>
+        <img className="image_showed" src={pictures[index]} alt={pics.title}></img>;
         <p>
           {index + 1} / {pictures.length}
         </p>
       </div>
-    )
+    );
   } else {
     return (
       <div className="carrousel">
         <img src={pictures[index]} alt={pics.title}></img>
-        </div>
-    )
-    
-  };
-}
-
+      </div>
+    );
+  }
+};
 
 export default Carrousel;

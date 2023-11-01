@@ -5,9 +5,15 @@
 @import "./footer.scss";
 @import "./carrousel.scss";
 @import "./formlogement.scss";
+@import "./about.scss";
 * {
   
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
+}
+body{
+  
+  margin-left: 50px;
+  margin-right: 50px;
 }

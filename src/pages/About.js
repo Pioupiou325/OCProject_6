@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <Banner />
       <PhotoBanner src="/assets/montagnes_apropos.jpg" alt="montagnes" />
       <Footer />
