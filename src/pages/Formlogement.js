@@ -6,11 +6,12 @@ import Footer from "../components/Footer";
 import Carrousel from "../components/Carrousel";
 import Rating from "../components/Rating";
 import Tag from "../components/Tag";
+import Collapse from "../components/Collapse";
 
 function Formlogement() {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id);
-  console.table(logement);
+  
   if (logement === undefined) {
     
     return Navigate( `/error`);
@@ -32,6 +33,8 @@ function Formlogement() {
           <img className="host"src={logement.host.picture} alt="propriétaire"></img>
         </div>
         <Rating className="rating" stars={logement.rating} />
+        <Collapse title="Description" content={logement.equipments} size="medium" />
+        
         {/* <Footer /> */}
         {/* minheight100vh */}
       </div>
