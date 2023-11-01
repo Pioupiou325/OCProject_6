@@ -2,13 +2,13 @@ import React from 'react';
 
 const Rating = ({ stars=0 }) => {
     const ratingTab = [];
-    for (let i = 0; i < stars; i++){
+    for (let i = 0; i < stars; i++) {
         
-        ratingTab.push(<img src="/assets/star-active.svg" alt="active"></img>);
+        ratingTab.push(<img key={i}  src="/assets/star-active.svg" alt="active"></img>);
     }
     
     for (let i = 5; i>stars; i--){
-        ratingTab.push(<img src="/assets/star-inactive.svg" alt="inactive"></img>);
+        ratingTab.push(<img key={i} src="/assets/star-inactive.svg" alt="inactive"></img>);
         
     }
     
