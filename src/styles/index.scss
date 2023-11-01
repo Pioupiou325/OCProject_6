@@ -6,6 +6,8 @@
 @import "./carrousel.scss";
 @import "./formlogement.scss";
 @import "./about.scss";
+@import "./tag.scss";
+
 * {
   
   max-width: 1440px;
@@ -13,7 +15,10 @@
   margin-left: auto;
 }
 body{
-  
+ 
   margin-left: 50px;
   margin-right: 50px;
+}
+p {
+  font-family: "Montserrat", sans-serif;
 }

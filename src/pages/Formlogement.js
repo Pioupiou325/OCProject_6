@@ -4,6 +4,8 @@ import { Navigate, useParams} from "react-router-dom";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Carrousel from "../components/Carrousel";
+import Rating from "../components/Rating";
+import Tag from "../components/Tag";
 
 function Formlogement() {
   const { id } = useParams();
@@ -24,11 +26,13 @@ function Formlogement() {
         
         <p className="title">{logement.title}</p>
         <p className="subTitle">{logement.location}</p>
+          <Tag className="tags" tags={logement.tags} />
         <div className="containerHost">
-        <p className="name">{logement.host.name}</p>
+          <p className="name">{logement.host.name}</p>
           <img className="host"src={logement.host.picture} alt="propriétaire"></img>
-          </div>
-        <Footer />
+        </div>
+        <Rating className="rating" stars={logement.rating} />
+        {/* <Footer /> */}
         {/* minheight100vh */}
       </div>
     );
