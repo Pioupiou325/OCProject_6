@@ -8,7 +8,7 @@ import Carrousel from "../components/Carrousel";
 function Formlogement() {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id);
-  
+  console.table(logement);
   if (logement === undefined) {
     
     return Navigate( `/error`);
@@ -21,8 +21,13 @@ function Formlogement() {
       <div className="formlogement">
         <Banner />
         <Carrousel pics={logement} />
-      
-        {/* <img src={logement.host.picture} alt="propriétaire"></img> */}
+        
+        <p className="title">{logement.title}</p>
+        <p className="subTitle">{logement.location}</p>
+        <div className="containerHost">
+        <p className="name">{logement.host.name}</p>
+          <img className="host"src={logement.host.picture} alt="propriétaire"></img>
+          </div>
         <Footer />
         {/* minheight100vh */}
       </div>

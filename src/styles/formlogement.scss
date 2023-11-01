@@ -1,0 +1,35 @@
+.formlogement{
+    position: relative;
+    
+
+    
+    & .title{
+        color: #ff6060;
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+    & .subTitle{
+        color: #ff6060;
+        font-size: 18px;
+    }
+    & .containerHost{
+        & .name{
+            position: absolute;
+            bottom:245px;
+            right:74px;
+            width:7%;
+            color: #ff6060;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: end;
+        }
+        & .host{
+            position: absolute;
+            bottom:261px;
+            right:0px;
+            width:64px;
+            border-radius: 50%;
+        }
+
+    }
+}

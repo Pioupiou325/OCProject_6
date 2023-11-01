@@ -24,10 +24,23 @@ const Carrousel = ({ pics }) => {
   if (pictures.length > 1) {
     return (
       <div className="carrousel">
-        
-        <img className="leftPosition" onClick={clicOnPrevious} src="/assets/back.svg" alt=""></img>
-        <img className="rightPosition" onClick={clicOnNext} src="/assets/forward.svg" alt=""></img>
-        <img className="image_showed" src={pictures[index]} alt={pics.title}></img>;
+        <img
+          className="leftPosition"
+          onClick={clicOnPrevious}
+          src="/assets/back.svg"
+          alt=""
+        ></img>
+        <img
+          className="rightPosition"
+          onClick={clicOnNext}
+          src="/assets/forward.svg"
+          alt=""
+        ></img>
+        <img
+          className="image_showed"
+          src={pictures[index]}
+          alt={pics.title}
+        ></img>
         <p>
           {index + 1} / {pictures.length}
         </p>
@@ -36,7 +49,11 @@ const Carrousel = ({ pics }) => {
   } else {
     return (
       <div className="carrousel">
-        <img src={pictures[index]} alt={pics.title}></img>
+        <img
+          className="image_showed"
+          src={pictures[index]}
+          alt={pics.title}
+        ></img>
       </div>
     );
   }
