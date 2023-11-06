@@ -12,9 +12,19 @@ function Formlogement() {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id);
 
+
   if (logement === undefined) {
     return <Navigate to="/*" />;
   } else {
+    const equipments = [];
+    
+    logement.equipments.forEach((element) => {
+      equipments.push(<li key={element}>{element}</li>)
+    });
+
+
+
+
     return (
       <div className="formlogement">
         <Banner />
@@ -25,16 +35,17 @@ function Formlogement() {
 
         <Tag tags={logement.tags} />
         <div className="listCollapse">
+          
           <Collapse
             className="collapseInForm"
             title="Description"
-            content={logement.equipments}
+            content={logement.description}
             size="medium"
           />
           <Collapse
             className="collapseInForm"
-            title="Equipements"
-            content={logement.equipments}
+            title="Équipements"
+            content={equipments}
             size="medium"
           />
         </div>

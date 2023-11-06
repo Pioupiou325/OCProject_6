@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 
 const Carrousel = ({ pics }) => {
   const pictures = pics.pictures;
   const [index, updateIndex] = useState(0);
-  useEffect(() => {
-    <p>{index}</p>;
-  });
+ 
   function clicOnNext() {
     if (index < pictures.length - 1) {
       updateIndex(index + 1);

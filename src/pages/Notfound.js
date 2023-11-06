@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
 const Notfound = () => {
   return (
-    <div>
+    <div className="notFound">
       <Banner />
       <p className="highNumber">404</p>
       <p className="middleText">

@@ -1,18 +1,17 @@
 .navigation {
-  width:90%;
+  width: 90%;
   margin-top: 20px;
-  margin-bottom:20px;
- 
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  & .active{
-    text-decoration-color: #FF6060;
+  & .active {
+    text-decoration-color: #ff6060;
   }
-  & .inactive{
+  & .inactive {
     text-decoration: none;
   }
-  
-  & h1{
+
+  & h1 {
     margin-left: 0;
   }
   & ul {
@@ -23,7 +22,7 @@
     & li {
       list-style: none;
       font-family: "Montserrat", sans-serif;
-            font-size: 24px;
+      font-size: 24px;
 
       color: #ff6060;
     }

@@ -1,22 +1,16 @@
 import React from "react";
 
 const Collapse = ({ title, content, size }) => {
-  const equipments = [];
-  console.log(content);
-  content.forEach((element) => {
-    equipments.push(<li key={element}>{element}</li>)
-  });
-  return (
-
  
+  function showContent(){
+    console.log(content);
+  }
+  return (
     <div className="collapse">
       <p className="titleCollapse">{title}</p>
-      < img        
-          
-          src="/assets/arrow_high.svg"
-          alt=""></img>
-      <p className="contentMasked">{equipments}</p>
+      <img className="crochet" onClick={showContent}  src="/assets/arrow_high.svg" alt=""></img>
+      <p id="content" className="contentMasked">{content}</p>
     </div>
-  )
-}
+  );
+};
 export default Collapse;
