@@ -22,26 +22,29 @@ function Formlogement() {
 
         <p className="title">{logement.title}</p>
         <p className="subTitle">{logement.location}</p>
-        <Collapse className="collapseInForm"
+
+        <Collapse
+          className="collapseInForm"
           title="Description"
           content={logement.equipments}
           size="medium"
-          />
+        />
+
         <Tag className="tags" tags={logement.tags} />
-        
-<div className="containerHost">
+
+        <div className="containerHost">
           <p className="name">{logement.host.name}</p>
           <img
             className="host"
             src={logement.host.picture}
             alt="propriétaire"
-            ></img>
+          ></img>
         </div>
-            {/* <Rating className="rating" stars={logement.rating} /> */}
+        {/* <Rating className="rating" stars={logement.rating} /> */}
         {/* <Footer /> */}
         {/* minheight100vh */}
       </div>
-    )
+    );
   }
 }
 export default Formlogement;
