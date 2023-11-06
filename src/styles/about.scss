@@ -1,3 +1,12 @@
-.about{
-   height: 100vh;
+.about {
+  height: 100vh;
+  & .listCollapseAbout {
+    margin-top: 15px;
+    justify-content: center;
+    width: 70%;
+    & .collapse {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
 }

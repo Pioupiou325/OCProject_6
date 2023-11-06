@@ -6,6 +6,10 @@
         display:flex;
         margin-top: 15px;
         justify-content: space-between;
+        width:100%;
+        & .collapse{
+            width:45%;
+        }
 
     }
     & .title{
