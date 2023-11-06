@@ -12,6 +12,8 @@ function Card() {
             <li >
               <div className="logement">
                 <img src={logement.cover} alt={`cover ${logement.title}`} />
+                <div className="overlay"></div>
+
 
                 <p>{logement.title}</p>
               </div>
