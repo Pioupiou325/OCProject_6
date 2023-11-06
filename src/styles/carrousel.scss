@@ -1,13 +1,9 @@
 
 .carrousel{
-   position: relative;
-   // margin-left: 50px;
-   // margin-right: 50px;   
+   position: relative;   
    height: 415px;
    
-   & .image_showed {
-      background:linear-gradient(to bottom,#FFFFFF,#000000,100%);
-      
+   & .image_showed {            
       object-fit: cover;
       width:100%;
       height: 415px;

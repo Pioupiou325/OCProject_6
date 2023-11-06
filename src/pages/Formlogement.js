@@ -23,15 +23,21 @@ function Formlogement() {
         <p className="title">{logement.title}</p>
         <p className="subTitle">{logement.location}</p>
 
-        <Collapse
-          className="collapseInForm"
-          title="Description"
-          content={logement.equipments}
-          size="medium"
-        />
-
-        <Tag className="tags" tags={logement.tags} />
-
+        <Tag tags={logement.tags} />
+        <div className="listCollapse">
+          <Collapse
+            className="collapseInForm"
+            title="Description"
+            content={logement.equipments}
+            size="medium"
+          />
+          <Collapse
+            className="collapseInForm"
+            title="Equipements"
+            content={logement.equipments}
+            size="medium"
+          />
+        </div>
         <div className="containerHost">
           <p className="name">{logement.host.name}</p>
           <img
@@ -39,9 +45,9 @@ function Formlogement() {
             src={logement.host.picture}
             alt="propriétaire"
           ></img>
+          <Rating className="rating" stars={logement.rating} />
         </div>
-        {/* <Rating className="rating" stars={logement.rating} /> */}
-        {/* <Footer /> */}
+        <Footer />
         {/* minheight100vh */}
       </div>
     );

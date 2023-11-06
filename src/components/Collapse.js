@@ -11,6 +11,10 @@ const Collapse = ({ title, content, size }) => {
  
     <div className="collapse">
       <p className="titleCollapse">{title}</p>
+      < img        
+          
+          src="/assets/arrow_high.svg"
+          alt=""></img>
       <p className="contentMasked">{equipments}</p>
     </div>
   )
