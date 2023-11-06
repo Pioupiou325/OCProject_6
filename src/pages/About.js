@@ -3,8 +3,7 @@ import Collapse from "../components/Collapse";
 import PhotoBanner from "../components/PhotoBanner";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import logements from "../datas/logements.json";
-console.log(logements);
+
 const About = () => {
   return (
     <div className="about">
