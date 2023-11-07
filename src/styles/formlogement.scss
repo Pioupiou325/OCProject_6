@@ -1,53 +1,50 @@
-.formlogement{
-    min-height: 100vh;
-    position: relative; 
-    
-    & .listCollapse{
-        display:flex;
-        margin-top: 15px;
-        justify-content: space-between;
-        width:100%;
-        & .collapse{
-            width:45%;
-        }
+.formlogement {
+  min-height: 100vh;
+  position: relative;
 
+  & .listCollapse {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    width: 100%;
+    & .collapse {
+      width: 47%;
+      margin: 0;
     }
-    & .title{
-        color: #ff6060;
-        font-size: 36px;
-        margin-bottom: 0;
+  }
+  & .title {
+    color: #ff6060;
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  & .subTitle {
+    color: #ff6060;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  & .containerHost {
+    & .name {
+      position: absolute;
+      top: 561px;
+      right: 74px;
+      width: 7%;
+      color: #ff6060;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: end;
     }
-    & .subTitle{
-        color: #ff6060;
-        font-size: 18px;
-        margin-bottom:10px;
-        margin-top: 10px;
+    & .host {
+      position: absolute;
+      top: 577px;
+      right: 0px;
+      width: 64px;
+      border-radius: 50%;
     }
-    & .containerHost{
-        & .name{
-            position: absolute;
-            top: 561px;;
-            right:74px;
-            width:7%;
-            color: #ff6060;
-            font-size: 18px;
-            line-height: 30px;
-            text-align: end;
-        }
-        & .host{
-            position: absolute;
-            top:577px;
-            right:0px;
-            width:64px;
-            border-radius: 50%;
-        }
-
-    }
-    & .rating{
-        position:absolute;
-        top:664px;
-        right:-6px;
-    }
-    
-    
+  }
+  & .rating {
+    position: absolute;
+    top: 664px;
+    right: -6px;
+  }
 }

@@ -36,7 +36,8 @@
   & .content.active {
     visibility: visible;
     height: auto;
-    display: contents;
+    display: flex;
+    flex-direction: column;
     justify-content: left;
     margin-left: 0;
     font-family: "Montserrat", sans-serif;
@@ -44,6 +45,14 @@
     background-color: #f6f6f6;
     font-size: 18px;
     color: #ff6060;
-    padding: 43px 20px 19px 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: left;
+    & li {
+      margin-left: 0;
+    }
   }
+
 }
