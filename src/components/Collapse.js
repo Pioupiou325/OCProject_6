@@ -10,7 +10,7 @@ const Collapse = ({ title, content }) => {
   return (
     <div className="collapse">
       <div className="titleCollapse">{title}
-        <img className="crochet" onClick={handleToggle} src="/assets/arrow_high.svg" alt=""></img>
+        <img className={`crochet ${active && "active "}`} onClick={handleToggle} src="/assets/arrow_high.svg" alt=""></img>
         </div>
       <div className={`content ${active && "active "}`}>{content}</div>
     </div>

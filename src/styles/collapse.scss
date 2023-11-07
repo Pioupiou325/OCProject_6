@@ -14,25 +14,29 @@
     padding-bottom: 8px;
     align-items: center;
     justify-content: space-between;
-    
+
     vertical-align: middle;
     color: white;
     margin: 0;
   }
   & .crochet {
     margin: 0;
+    transition-duration: 0.3s;
+  }
+  & .crochet.active {
+    transform: rotate(0.5turn);
+    transition-duration: 0.3s;
   }
 
-
-& .content {
-  height: 0;
-  font-family: "Montserrat", sans-serif;
-  visibility: hidden;
-  display: flex;
-  list-style: none;
-}
-& .content.active {
-  visibility: visible;
-  height: auto;
-}
+  & .content {
+    height: 0;
+    font-family: "Montserrat", sans-serif;
+    visibility: hidden;
+    display: flex;
+    list-style: none;
+  }
+  & .content.active {
+    visibility: visible;
+    height: auto;
+  }
 }
