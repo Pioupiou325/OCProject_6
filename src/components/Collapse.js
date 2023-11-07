@@ -4,8 +4,7 @@ import { useState } from "react";
 const Collapse = ({ title, content }) => {
   const [active, setActive] = useState(false);
   function handleToggle() {
-    console.log("ok");
-    setActive(!active);
+        setActive(!active);
   }
   return (
     <div className="collapse">

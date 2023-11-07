@@ -7,7 +7,7 @@
     background-color: #ff6060;
     color: #ffffff;
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 8px;
@@ -30,13 +30,20 @@
 
   & .content {
     height: 0;
-    font-family: "Montserrat", sans-serif;
     visibility: hidden;
     display: flex;
-    list-style: none;
   }
   & .content.active {
     visibility: visible;
     height: auto;
+    display: contents;
+    justify-content: left;
+    margin-left: 0;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    background-color: #f6f6f6;
+    font-size: 18px;
+    color: #ff6060;
+    padding: 43px 20px 19px 20px;
   }
 }
