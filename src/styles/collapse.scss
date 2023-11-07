@@ -1,32 +1,38 @@
 .collapse {
-  margin: 0;
-  display: flex;
-  gap: 10px;
-  background-color: #ff6060;
-  color: #ffffff;
-  font-size: 18px;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  justify-content: space-between;
-  align-items: center;
   & .titleCollapse {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
     display: flex;
+    gap: 10px;
+    background-color: #ff6060;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-items: center;
+    justify-content: space-between;
+    
     vertical-align: middle;
     color: white;
     margin: 0;
   }
-  & img {
+  & .crochet {
     margin: 0;
   }
-}
 
-.contentVisible {
+
+& .content {
+  height: 0;
+  font-family: "Montserrat", sans-serif;
+  visibility: hidden;
   display: flex;
   list-style: none;
 }
-.contentMasked {
-  display: none;
+& .content.active {
+  visibility: visible;
+  height: auto;
+}
 }

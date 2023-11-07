@@ -1,15 +1,18 @@
 import React from "react";
+import { useState } from "react";
 
-const Collapse = ({ title, content, size }) => {
- 
-  function showContent(){
-    console.log(content);
+const Collapse = ({ title, content }) => {
+  const [active, setActive] = useState(false);
+  function handleToggle() {
+    console.log("ok");
+    setActive(!active);
   }
   return (
     <div className="collapse">
-      <p className="titleCollapse">{title}</p>
-      <img className="crochet" onClick={showContent}  src="/assets/arrow_high.svg" alt=""></img>
-      <p id="content" className="contentMasked">{content}</p>
+      <div className="titleCollapse">{title}
+        <img className="crochet" onClick={handleToggle} src="/assets/arrow_high.svg" alt=""></img>
+        </div>
+      <div className={`content ${active && "active "}`}>{content}</div>
     </div>
   );
 };
