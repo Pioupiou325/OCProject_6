@@ -48,3 +48,37 @@
     right: -6px;
   }
 }
+@media screen and (max-width: 768px){
+  .formlogement{
+    & .title{
+margin-left: 20px;
+font-size: 18px;
+}
+& .subTitle{
+      margin-left: 20px;
+font-size: 14px;
+    }
+    & .listCollapse{
+      flex-direction: column;
+      & .collapse{
+        width: 100%;
+        & .titleCollapse{
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+    & .rating{
+      left:0px;
+    margin-left: 0;
+      }
+      & .containerHost{
+        & .name{
+        font-size: 12px;
+        }
+        & .host{
+          width: 32px;
+        }
+      }
+  }
+}

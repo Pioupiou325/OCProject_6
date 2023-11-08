@@ -4,27 +4,45 @@
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   & .active {
     text-decoration-color: #ff6060;
   }
   & .inactive {
     text-decoration: none;
   }
-
   & h1 {
-    margin-left: 0;
-  }
+    margin: 0;
+      }
   & ul {
     display: flex;
-    margin-right: 0;
-    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
     gap: 30px;
     & li {
       list-style: none;
       font-family: "Montserrat", sans-serif;
       font-size: 24px;
-
       color: #ff6060;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .navigation{
+    & h1{      
+        & img{
+          width:145px;
+    
+        }
+      
+    }
+    & ul{
+      gap:10px;
+      & li{
+
+        font-size: 12px;
+        text-transform: uppercase;
+      }
     }
   }
 }

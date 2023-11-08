@@ -9,8 +9,11 @@ const Footer = () => {
         alt="logo Kasa"
         width="122px"
         heigth="39px"
-      />
-        <p>© 2020 Kasa. All rights reserved</p>
+        />
+        
+          <p>© 2020 Kasa. All <span className="mobileSpace"><br></br></span>     
+          rights reserved</p>
+          
         </div>
     </div>
   );

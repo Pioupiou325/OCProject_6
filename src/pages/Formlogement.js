@@ -12,18 +12,14 @@ function Formlogement() {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id);
 
-
   if (logement === undefined) {
     return <Navigate to="/*" />;
   } else {
     const equipments = [];
-    
+
     logement.equipments.forEach((element) => {
-      equipments.push(<li key={element}>{element}</li>)
+      equipments.push(<li key={element}>{element}</li>);
     });
-
-
-
 
     return (
       <div className="formlogement">
@@ -34,8 +30,10 @@ function Formlogement() {
         <p className="subTitle">{logement.location}</p>
 
         <Tag tags={logement.tags} />
+
+        <Rating className="rating" stars={logement.rating} />
+
         <div className="listCollapse">
-          
           <Collapse
             className="collapseInForm"
             title="Description"
@@ -56,10 +54,8 @@ function Formlogement() {
             src={logement.host.picture}
             alt="propriétaire"
           ></img>
-          <Rating className="rating" stars={logement.rating} />
         </div>
         <Footer />
-        {/* minheight100vh */}
       </div>
     );
   }

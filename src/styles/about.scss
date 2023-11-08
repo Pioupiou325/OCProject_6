@@ -1,12 +1,21 @@
 .about {
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
   & .listCollapseAbout {
     margin-top: 15px;
     justify-content: center;
     width: 70%;
+    display: grid;
     & .collapse {
       width: 100%;
-      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    & .listCollapseAbout {
+      width: 90%;
     }
   }
 }

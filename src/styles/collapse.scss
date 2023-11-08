@@ -1,9 +1,14 @@
 .collapse {
-  & .titleCollapse {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    display: flex;
-    gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  font-size: 18px;
+  color: #ff6060;
+  margin: 0;
+  
+  position: relative;
+
+  .titleCollapse {
+    margin-top: 30px;
     background-color: #ff6060;
     color: #ffffff;
     font-size: 18px;
@@ -12,54 +17,48 @@
     padding-right: 10px;
     padding-top: 8px;
     padding-bottom: 8px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index:1;
 
-    vertical-align: middle;
-    color: white;
-    margin: 0;
-  }
-  & .crochet {
-    margin: 0;
-    transition-duration: 0.3s;
-  }
-  & .crochet:hover{
-    cursor: pointer;
-  }
-  & .crochet.active {
-    transform: rotate(-0.5turn);
-    transition-duration: 0.3s;
-  }
-
-  
-
-  & .content {
-    height: 0;
-    visibility: hidden;
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    list-style: none;
-    background-color: #f6f6f6;
-    border-radius: 5px;
-    font-size: 18px;
-    color: #ff6060;
-    
-  }
-  & .content.active {
-    visibility: visible;    
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin-left: 0;
-    padding-left: 20px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    text-align: left;
-    height: auto;
-    & li {
-      margin-left: 0;
+    .crochet {
+      margin: 0;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    &.active {
+      margin-bottom: 0;
+      .crochet.active {
+        margin-bottom: 0;
+      }
+    }
+    .crochet.active {
+      transform: rotate(-0.5turn);
     }
   }
-
+  .content {
+    visibility: hidden;
+    max-height: 0;
+    transition: transform 0.7s ease;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    color: #ff6060;
+    text-align: left;
+    position: relative;
+    z-index:0;   
+    transform: translateY(-20px);
+    
+    &.active {
+      padding: 20px 40px 40px 20px;
+      visibility: visible;
+      display: inline-table;
+      transform: translateY(0px);
+      
+     
+    }
+    
+  }
 }
