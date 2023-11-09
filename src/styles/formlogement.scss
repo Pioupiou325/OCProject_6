@@ -1,37 +1,47 @@
 .formlogement {
-  min-height: 100vh;  
+  min-height: 100vh;
   flex-direction: column;
   display: flex;
 
+  & .tagAndRating {
+    display: flex;
+    width: 86%;
+    justify-content: space-between;
+  }
   & .listCollapse {
     display: flex;
     margin-top: 15px;
     margin-bottom: 50px;
     justify-content: space-between;
-    width: 100%;
+    width: 86%;
     & .collapse {
       width: 47%;
       margin: 0;
-      & .titleCollapse{
+      & .titleCollapse {
         font-size: 18px;
         padding: 10px 20px 10px 10px;
         border-radius: 10px;
-
       }
     }
   }
-  & .title {
-    color: #ff6060;
-    font-size: 36px;
-    margin-bottom: 0;
-    margin-left: 20px;
-  }
-  & .subTitle {
-    color: #ff6060;
-    font-size: 18px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 20px;
+  & .titleAndSubtitle {
+    
+    
+    width: 86%;
+    
+
+    & .title {
+      display: flex;
+      color: #ff6060;
+      font-size: 36px;
+      margin-bottom: 0;
+    }
+    & .subTitle {
+      color: #ff6060;
+      font-size: 18px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
   }
   & .containerHost {
     & .name {
@@ -52,55 +62,49 @@
       border-radius: 50%;
     }
   }
-  & .rating {
-    position: absolute;
-    top: 664px;
-    right: -6px;
-  }
 }
-@media screen and (max-width: 768px){
-  .formlogement{
-    & .rating{
-      top:477px;
-      left:20px;
-    margin-left: 0;
-      & img{
-      width:18px;
-      height: 18px;
-    }}
-    & .title{
-margin-left: 20px;
-font-size: 18px;
-}
-& .subTitle{
-      margin-left: 20px;
-font-size: 14px;
+@media screen and (max-width: 768px) {
+  .formlogement {
+    & .rating {
+      top: 477px;
+      left: 20px;
+      margin-left: 0;
+      & img {
+        width: 18px;
+        height: 18px;
+      }
     }
-    & .listCollapse{
+    & .title {
+      margin-left: 20px;
+      font-size: 18px;
+    }
+    & .subTitle {
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    & .listCollapse {
       flex-direction: column;
       margin-top: 50px;
-      & .collapse{
+      & .collapse {
         width: 100%;
-        & .titleCollapse{
+        & .titleCollapse {
           margin-left: 20px;
           margin-right: 20px;
         }
       }
     }
-    
-      & .containerHost{
-        & .name{
+
+    & .containerHost {
+      & .name {
         font-size: 12px;
-        top:453px;
+        top: 453px;
         line-height: 2;
-        }
-        & .host{
-          width: 32px;
-          top:472px;
-          right: 18px;
-          
-          
-        }
       }
+      & .host {
+        width: 32px;
+        top: 472px;
+        right: 18px;
+      }
+    }
   }
 }

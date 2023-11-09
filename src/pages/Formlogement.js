@@ -25,14 +25,14 @@ function Formlogement() {
       <div className="formlogement">
         <Banner />
         <Carrousel pics={logement} />
-
-        <p className="title">{logement.title}</p>
-        <p className="subTitle">{logement.location}</p>
-
-        <Tag tags={logement.tags} />
-
-        <Rating className="rating" stars={logement.rating} />
-
+        <div className="titleAndSubtitle">
+          <p className="title">{logement.title}</p>
+          <p className="subTitle">{logement.location}</p>
+        </div>
+        <div className="tagAndRating">
+          <Tag tags={logement.tags} />
+          <Rating className="rating" stars={logement.rating} />
+        </div>
         <div className="listCollapse">
           <Collapse
             className="collapseInForm"

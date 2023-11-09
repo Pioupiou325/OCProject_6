@@ -1,12 +1,15 @@
 .notFound {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
   & .highNumber {
     display: flex;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: #ff6060;
     font-size: 288px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 139px;
+    margin-bottom: 139px;
     justify-content: center;
   }
   & .middleText {
@@ -17,6 +20,7 @@
     font-size: 36px;
     margin-top: 0;
     justify-content: center;
+    margin-bottom: 139px;
   }
   & .littleText {
     display: flex;
