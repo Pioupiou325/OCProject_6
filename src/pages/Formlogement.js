@@ -27,10 +27,23 @@ function Formlogement() {
       <div className="formlogement">
         <Banner />
         <Carrousel pics={logement} />
+        <div className="titleAndName">
         <div className="titleAndSubtitle">
           <p className="title">{logement.title}</p>
           <p className="subTitle">{logement.location}</p>
         </div>
+          <div className="containerHost">
+            <div className="name">
+          <p className="firstName">{firstName}</p>
+              <p className="lastName">{lastName}</p>
+              </div>
+          <img
+            className="host"
+            src={logement.host.picture}
+            alt="propriétaire"
+          ></img>
+          </div>
+          </div>
         <div className="tagAndRating">
           <Tag tags={logement.tags} />
           <Rating className="rating" stars={logement.rating} />
@@ -49,14 +62,7 @@ function Formlogement() {
             size="medium"
           />
         </div>
-        <div className="containerHost">
-          <p className="name">{lastName}</p>
-          <img
-            className="host"
-            src={logement.host.picture}
-            alt="propriétaire"
-          ></img>
-        </div>
+        
         <Footer />
       </div>
     );

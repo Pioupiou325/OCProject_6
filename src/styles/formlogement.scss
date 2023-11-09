@@ -13,7 +13,6 @@
   }
   & .listCollapse {
     display: flex;
-    margin-top: 15px;
     margin-bottom: 50px;
     justify-content: space-between;
     width: 86%;
@@ -27,33 +26,52 @@
       }
     }
   }
-  & .titleAndSubtitle {
+  & .titleAndName {
+    display: flex;
+
     width: 86%;
 
-    & .title {
+    justify-content: space-between;
+    & .titleAndSubtitle {
+      margin: 0;
+      & .title {
+        color: #ff6060;
+        font-size: 36px;
+        margin-bottom: 0;
+      }
+      & .subTitle {
+        color: #ff6060;
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    }
+    & .containerHost {
       display: flex;
-      color: #ff6060;
-      font-size: 36px;
-      margin-bottom: 0;
-    }
-    & .subTitle {
-      color: #ff6060;
-      font-size: 18px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-    }
-  }
-  & .containerHost {
-    display:flex;
-    & .name {
-      color: #ff6060;
-      font-size: 18px;
-      line-height: 30px;
-      text-align: end;
-    }
-    & .host {
-      width: 64px;
-      border-radius: 50%;
+      margin: 0;
+      align-items: center;
+      gap: 5px;
+      & .name {
+        & .firstName {
+          color: #ff6060;
+          font-size: 18px;
+          line-height: 30px;
+          text-align: end;
+          margin: 0;
+        }
+        & .lastName {
+          margin: 0;
+          color: #ff6060;
+          font-size: 18px;
+          line-height: 30px;
+          text-align: end;
+        }
+      }
+      & .host {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
     }
   }
 }
