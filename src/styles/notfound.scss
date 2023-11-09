@@ -29,3 +29,21 @@
     text-decoration: underline;
   }
 }
+@media screen and (max-width: 768px){
+  .notFound {
+    & .highNumber {
+      font-size: 96px;
+      margin-top: 108px;
+
+}
+  
+  & .middleText {
+    font-size: 18px;
+    width:219px;
+    margin-top: 75px;
+  }
+  & .littleText{
+    font-size: 14px;
+    margin-top: 50px;
+  }
+}}
