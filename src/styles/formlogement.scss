@@ -12,18 +12,26 @@
     & .collapse {
       width: 47%;
       margin: 0;
+      & .titleCollapse{
+        font-size: 18px;
+        padding: 10px 20px 10px 10px;
+        border-radius: 10px;
+
+      }
     }
   }
   & .title {
     color: #ff6060;
     font-size: 36px;
     margin-bottom: 0;
+    margin-left: 20px;
   }
   & .subTitle {
     color: #ff6060;
     font-size: 18px;
     margin-bottom: 10px;
     margin-top: 10px;
+    margin-left: 20px;
   }
   & .containerHost {
     & .name {

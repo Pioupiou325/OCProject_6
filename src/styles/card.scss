@@ -1,5 +1,5 @@
 .card {
-  width: 90%;
+  width: 86%;
 
   & ul {
     display: flex;
@@ -15,7 +15,7 @@
     margin-bottom: 50px;
 
     & a {
-      width: 30%;
+      width: 28%;
       margin: 0;
     }
 
@@ -59,13 +59,9 @@
         left: 20px;
       }
     }
-
-    // & li:nth-last-child(-n + 2) {
-    //   margin-right: auto; /* Centre les deux dernières images */
-    // }
   }
 }
-@media all and (min-width: 769px) and (max-width: 1124px) {
+@media all and (min-width: 769px) and (max-width: 1200px) {
   .card {
     & ul {
       & a {
