@@ -20,7 +20,9 @@ function Formlogement() {
     logement.equipments.forEach((element) => {
       equipments.push(<li key={element}>{element}</li>);
     });
-
+    const name = logement.host.name.split(" ");
+    const firstName = name[0];
+    const lastName = name[1];
     return (
       <div className="formlogement">
         <Banner />
@@ -48,7 +50,7 @@ function Formlogement() {
           />
         </div>
         <div className="containerHost">
-          <p className="name">{logement.host.name}</p>
+          <p className="name">{lastName}</p>
           <img
             className="host"
             src={logement.host.picture}
