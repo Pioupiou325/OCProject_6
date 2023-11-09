@@ -31,3 +31,27 @@
 
    }
 }
+@media screen and (max-width: 768px){
+   .carrousel{
+      height:255px;
+      & p{
+         visibility: hidden;
+      }
+      & .image_showed{
+         height:255px;
+      }
+      & .leftPosition{
+         top:119px;
+         left:6px;
+         width:24px;
+         height: 24px;
+      }
+      & .rightPosition{         
+         top:119px;
+         right:6px;
+         width:24px;
+         height: 24px;
+   
+      }
+   }
+}

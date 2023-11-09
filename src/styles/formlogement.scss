@@ -50,6 +50,14 @@
 }
 @media screen and (max-width: 768px){
   .formlogement{
+    & .rating{
+      top:477px;
+      left:20px;
+    margin-left: 0;
+      & img{
+      width:18px;
+      height: 18px;
+    }}
     & .title{
 margin-left: 20px;
 font-size: 18px;
@@ -60,6 +68,7 @@ font-size: 14px;
     }
     & .listCollapse{
       flex-direction: column;
+      margin-top: 50px;
       & .collapse{
         width: 100%;
         & .titleCollapse{
@@ -68,16 +77,19 @@ font-size: 14px;
         }
       }
     }
-    & .rating{
-      left:0px;
-    margin-left: 0;
-      }
+    
       & .containerHost{
         & .name{
         font-size: 12px;
+        top:453px;
+        line-height: 2;
         }
         & .host{
           width: 32px;
+          top:472px;
+          right: 18px;
+          
+          
         }
       }
   }
