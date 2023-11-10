@@ -6,7 +6,7 @@
   margin: 0;  
   position: relative;
 
-  .titleCollapse {
+  & .titleCollapse {
     margin-top: 30px;
     background-color: #ff6060;
     color: #ffffff;    
@@ -16,7 +16,7 @@
     position: relative;
     z-index:1;
 
-    .crochet {
+    & .crochet {
       margin: 0;
       cursor: pointer;
       transition: transform 0.5s;
@@ -27,11 +27,11 @@
         margin-bottom: 0;
       }
     }
-    .crochet.active {
+    & .crochet.active {
       transform: rotate(-0.5turn);
     }
   }
-  .content {
+  & .content {
     overflow: hidden;
     height: 0;
     transition: all 0.5s ease;
