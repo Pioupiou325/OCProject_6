@@ -77,15 +77,6 @@
 }
 @media screen and (max-width: 768px) {
   .formlogement {
-    & .rating {
-      top: 477px;
-      left: 20px;
-      margin-left: 0;
-      & img {
-        width: 18px;
-        height: 18px;
-      }
-    }
     & .title {
       margin-left: 20px;
       font-size: 18px;
@@ -100,8 +91,14 @@
       & .collapse {
         width: 100%;
         & .titleCollapse {
-          margin-left: 20px;
-          margin-right: 20px;
+          font-size: 13px;
+
+          & .crochet {
+            width: 20px;
+          }
+        }
+        & .content {
+          font-size: 12px;
         }
       }
     }
