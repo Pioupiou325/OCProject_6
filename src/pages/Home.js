@@ -6,13 +6,13 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home">      
       <Banner />
       <PhotoBanner src="/assets/montagnes_accueil.jpg" alt="montagnes">
         <p>Chez vous, <span className="mobileSpace">
             <br></br>
           </span>partout et ailleurs</p>
-      </PhotoBanner>      
+        </PhotoBanner>         
       <Card />
       <Footer />
     </div>
