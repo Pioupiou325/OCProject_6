@@ -9,7 +9,9 @@ const Home = () => {
     <div className="home">
       <Banner />
       <PhotoBanner src="/assets/montagnes_accueil.jpg" alt="montagnes">
-        <p>Chez vous, partout et ailleurs</p>
+        <p>Chez vous, <span className="mobileSpace">
+            <br></br>
+          </span>partout et ailleurs</p>
       </PhotoBanner>      
       <Card />
       <Footer />

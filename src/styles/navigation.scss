@@ -13,7 +13,10 @@
   }
   & h1 {
     margin: 0;
-      }
+    & img {
+      width: 210px;
+    }
+  }
   & ul {
     display: flex;
     margin: 0;
@@ -28,18 +31,15 @@
   }
 }
 @media (max-width: 768px) {
-  .navigation{
-    & h1{      
-        & img{
-          width:145px;
-    
-        }
-      
+  .navigation {
+    & h1 {
+      & img {
+        width: 145px;
+      }
     }
-    & ul{
-      gap:10px;
-      & li{
-
+    & ul {
+      gap: 10px;
+      & li {
         font-size: 12px;
         text-transform: uppercase;
       }

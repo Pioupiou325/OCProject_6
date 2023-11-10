@@ -26,10 +26,24 @@
       margin: 0;
       font-size: 48px;
       color: white;
+      & .mobileSpace {
+        display: none;
+      }
     }
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 900px) {
+  .photoBanner {
+    & .overlay {
+      & p {
+        & .mobileSpace {
+          display: contents;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
   .photoBanner {
     height: 111px;
     & img {
@@ -40,7 +54,6 @@
       & p {
         font-size: 24px;
         margin-left: 5px;
-        width: 227px;
       }
     }
   }

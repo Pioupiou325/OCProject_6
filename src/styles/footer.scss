@@ -7,10 +7,14 @@
   bottom: 0;
   & .logtext {
     padding-top: 45px;
+    & img {
+      padding-top: 10px;
+      width: 122px;
+    }
     & p {
       margin: 0;
       font-size: 24px;
-      padding-top: 30px;
+      padding-top: 50px;
       color: white;
       & .mobileSpace {
         display: none;
