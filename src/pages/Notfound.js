@@ -8,7 +8,11 @@ const Notfound = () => {
       <Banner />
       <p className="highNumber">404</p>
       <p className="middleText">
-        Oups! La page que vous demandez n' existe pas
+        Oups! La page que {" "}
+        <span className="mobileSpace">
+            <br></br>
+        </span>
+        vous demandez n' existe pas
       </p>
       <NavLink to={`/`}>
         <p className="littleText">Retourner sur la page d' accueil</p>
