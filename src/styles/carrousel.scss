@@ -21,11 +21,13 @@
     position: absolute;
     top: 38%;
     left: 0px;
+    cursor: pointer;
   }
   & .rightPosition {
     position: absolute;
     top: 38%;
     right: 0px;
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 768px) {

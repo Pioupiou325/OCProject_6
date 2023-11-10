@@ -14,11 +14,11 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    cursor: pointer;
     z-index:1;
 
     & .crochet {
       margin: 0;
-      cursor: pointer;
       transition: transform 0.5s;
     }
     &.active {

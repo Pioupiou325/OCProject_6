@@ -27,11 +27,15 @@ function Formlogement() {
       <div className="formlogement">
         <Banner />
         <Carrousel pics={logement} />
-        <div className="titleAndName">
+        <div className="sectionTitleTagsAndHostRating">
+        <div className="titleAndTags">
         <div className="titleAndSubtitle">
           <p className="title">{logement.title}</p>
           <p className="subTitle">{logement.location}</p>
-        </div>
+              <Tag tags={logement.tags} />
+          </div>
+          </div>
+          <div className="hostAndRating">
           <div className="containerHost">
             <div className="name">
           <p className="firstName">{firstName}</p>
@@ -42,12 +46,11 @@ function Formlogement() {
             src={logement.host.picture}
             alt="propriétaire"
           ></img>
-          </div>
-          </div>
-        <div className="tagAndRating">
-          <Tag tags={logement.tags} />
+          </div>         
+        
           <Rating className="rating" stars={logement.rating} />
-        </div>
+          </div>
+          </div>
         <div className="listCollapse">
           <Collapse
             className="collapseInForm"
