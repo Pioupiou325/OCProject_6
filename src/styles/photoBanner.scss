@@ -1,6 +1,5 @@
 .photoBanner {
   width: 86%;
-  margin-top: 30px;
   height: 223px;
   position: relative;
 
@@ -11,7 +10,7 @@
     height: 100%;
   }
   & .overlay {
-    display:flex;
+    display: flex;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -20,29 +19,29 @@
     background: rgba(0, 0, 0, 0.3);
     border-radius: 25px;
     justify-content: center;
-    
+
     & p {
       display: flex;
       align-items: center;
-    margin: 0;
-    font-size: 48px;
-    color: white;
-  
+      margin: 0;
+      font-size: 48px;
+      color: white;
+    }
   }
 }
-}
 @media (max-width: 768px) {
-  .photoBanner{
+  .photoBanner {
     height: 111px;
-    & img{
+    & img {
       border-radius: 10px;
     }
-    & .overlay{
+    & .overlay {
       border-radius: 10px;
-    & p{
-font-size: 24px;
-margin-left: 5px;
-width: 227px;
+      & p {
+        font-size: 24px;
+        margin-left: 5px;
+        width: 227px;
+      }
     }
-  }}
+  }
 }
