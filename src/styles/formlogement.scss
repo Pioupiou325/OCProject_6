@@ -2,8 +2,9 @@
   min-height: 100vh;
   flex-direction: column;
   display: flex;
-  & header, footer{
-    width:100%;
+  & header,
+  footer {
+    width: 100%;
   }
   & .listCollapse {
     display: flex;
@@ -110,8 +111,14 @@
           margin: 0;
           gap: 13px;
           & .name {
-            font-size: 12px;
-            line-height: 2;
+            & .firstName {
+              line-height: 17px;
+              font-size: 12px;
+            }
+            & .lastName {
+              font-size: 12px;
+              line-height: 17px;
+            }
           }
           & .host {
             width: 32px;
