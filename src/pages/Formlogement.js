@@ -18,7 +18,7 @@ function Formlogement() {
     const equipments = [];
 
     logement.equipments.forEach((element) => {
-      equipments.push(<li key={element}>{element}</li>);
+      equipments.push(<p key={element}>{element}</p>);
     });
     const name = logement.host.name.split(" ");
     const firstName = name[0];

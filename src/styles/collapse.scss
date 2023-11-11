@@ -34,8 +34,7 @@
   & .content {
     overflow: hidden;
     height: 0;
-    transition: all 0.5s ease;
-    font-family: "Montserrat", sans-serif;
+    transition: all 0.5s ease;    
     background-color: #f6f6f6;
     border-radius: 5px;
     color: #ff6060;
@@ -45,6 +44,9 @@
     padding: 0px 40px 0px 20px;      
     transform: translateY(-20px);
     width: calc(100% - 60px);
+    & p{
+      margin:0;
+    }
     
     
     &.active {
