@@ -28,6 +28,7 @@ function Formlogement() {
         <header>
           <Banner />
         </header>
+        <main>
         <Carrousel pics={logement} />
         <div className="sectionTitleTagsAndHostRating">
           <div className="titleAndTags">
@@ -66,7 +67,8 @@ function Formlogement() {
             content={equipments}
             size="medium"
           />
-        </div>
+          </div>
+          </main>
         <footer>
           <Footer />
         </footer>

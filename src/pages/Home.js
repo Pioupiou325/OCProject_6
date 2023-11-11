@@ -10,6 +10,7 @@ const Home = () => {
       <header>
         <Banner />
       </header>
+      <main>
       <PhotoBanner src="/assets/montagnes_accueil.jpg" alt="montagnes">
         <p>
           Chez vous,{" "}
@@ -19,7 +20,8 @@ const Home = () => {
           partout et ailleurs
         </p>
       </PhotoBanner>
-      <Card />
+        <Card />
+        </main>
       <footer>
         <Footer />
       </footer>

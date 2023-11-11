@@ -10,6 +10,7 @@ const About = () => {
       <header>
         <Banner />
       </header>
+      <main>
       <PhotoBanner src="/assets/montagnes_apropos.jpg" alt="montagnes" />
       <div className="listCollapseAbout">
         <Collapse
@@ -42,7 +43,8 @@ const About = () => {
             également des ateliers sur la sécurité domestique pour nos hôtes."
           size="medium"
         />
-      </div>
+        </div>
+        </main>
       <footer>
         <Footer />
       </footer>
