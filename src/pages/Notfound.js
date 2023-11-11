@@ -8,7 +8,7 @@ const Notfound = () => {
       <header>
         <Banner />
       </header>
-      <main>
+
       <p className="highNumber">404</p>
       <p className="middleText">
         Oups! La page que{" "}
@@ -19,8 +19,8 @@ const Notfound = () => {
       </p>
       <NavLink to={`/`}>
         <p className="littleText">Retourner sur la page d' accueil</p>
-        </NavLink>
-        </main>
+      </NavLink>
+
       <footer>
         <Footer />
       </footer>

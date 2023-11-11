@@ -6,6 +6,7 @@
   footer {
     width: 100%;
   }
+  
   & .highNumber {
     font-weight: 700;
     color: #ff6060;
@@ -33,6 +34,7 @@
     text-decoration: underline;
   }
 }
+
 @media screen and (max-width: 900px) {
   .notFound {
     & .middleText {
@@ -44,6 +46,7 @@
 }
 @media screen and (max-width: 768px) {
   .notFound {
+    
     & .highNumber {
       font-size: 96px;
       margin-top: 86px;
