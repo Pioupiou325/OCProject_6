@@ -25,32 +25,34 @@ function Formlogement() {
     const lastName = name[1];
     return (
       <div className="formlogement">
-        <Banner />
+        <header>
+          <Banner />
+        </header>
         <Carrousel pics={logement} />
         <div className="sectionTitleTagsAndHostRating">
-        <div className="titleAndTags">
-        <div className="titleAndSubtitle">
-          <p className="title">{logement.title}</p>
-          <p className="subTitle">{logement.location}</p>
+          <div className="titleAndTags">
+            <div className="titleAndSubtitle">
+              <p className="title">{logement.title}</p>
+              <p className="subTitle">{logement.location}</p>
               <Tag tags={logement.tags} />
-          </div>
+            </div>
           </div>
           <div className="hostAndRating">
-          <div className="containerHost">
-            <div className="name">
-          <p className="firstName">{firstName}</p>
-              <p className="lastName">{lastName}</p>
+            <div className="containerHost">
+              <div className="name">
+                <p className="firstName">{firstName}</p>
+                <p className="lastName">{lastName}</p>
               </div>
-          <img
-            className="host"
-            src={logement.host.picture}
-            alt="propriétaire"
-          ></img>
-          </div>         
-        
-          <Rating className="rating" stars={logement.rating} />
+              <img
+                className="host"
+                src={logement.host.picture}
+                alt="propriétaire"
+              ></img>
+            </div>
+
+            <Rating className="rating" stars={logement.rating} />
           </div>
-          </div>
+        </div>
         <div className="listCollapse">
           <Collapse
             className="collapseInForm"
@@ -65,8 +67,9 @@ function Formlogement() {
             size="medium"
           />
         </div>
-        
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }

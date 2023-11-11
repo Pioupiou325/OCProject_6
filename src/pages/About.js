@@ -7,7 +7,9 @@ import Footer from "../components/Footer";
 const About = () => {
   return (
     <div className="about">
-      <Banner />
+      <header>
+        <Banner />
+      </header>
       <PhotoBanner src="/assets/montagnes_apropos.jpg" alt="montagnes" />
       <div className="listCollapseAbout">
         <Collapse
@@ -41,7 +43,9 @@ const About = () => {
           size="medium"
         />
       </div>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

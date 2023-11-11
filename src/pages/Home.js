@@ -6,21 +6,24 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="home">      
-      <Banner />
+    <div className="home">
+      <header>
+        <Banner />
+      </header>
       <PhotoBanner src="/assets/montagnes_accueil.jpg" alt="montagnes">
-        <p>Chez vous, <span className="mobileSpace">
+        <p>
+          Chez vous,{" "}
+          <span className="mobileSpace">
             <br></br>
-          </span>partout et ailleurs</p>
-        </PhotoBanner>         
+          </span>
+          partout et ailleurs
+        </p>
+      </PhotoBanner>
       <Card />
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
-    
-      
-    
-
-    
   );
 };
 

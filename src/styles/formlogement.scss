@@ -2,6 +2,9 @@
   min-height: 100vh;
   flex-direction: column;
   display: flex;
+  & header, footer{
+    width:100%;
+  }
   & .listCollapse {
     display: flex;
     margin-bottom: 50px;

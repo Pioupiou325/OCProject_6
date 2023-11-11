@@ -2,6 +2,10 @@
   min-height: 100vh;
   flex-direction: column;
   display: flex;
+  & header,
+  footer {
+    width: 100%;
+  }
   & .highNumber {
     font-weight: 700;
     color: #ff6060;

@@ -5,20 +5,23 @@ import { NavLink } from "react-router-dom";
 const Notfound = () => {
   return (
     <div className="notFound">
-      <Banner />
+      <header>
+        <Banner />
+      </header>
       <p className="highNumber">404</p>
       <p className="middleText">
-        Oups! La page que {" "}
+        Oups! La page que{" "}
         <span className="mobileSpace">
-            <br></br>
+          <br></br>
         </span>
         vous demandez n' existe pas
       </p>
       <NavLink to={`/`}>
         <p className="littleText">Retourner sur la page d' accueil</p>
       </NavLink>
-
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
